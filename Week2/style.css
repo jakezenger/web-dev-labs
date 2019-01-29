@@ -1,0 +1,25 @@
+.column-heading {
+    color: green;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#home-page-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#menu-bar {
+    list-style: none;
+    
+}
+
+#menu-bar li {
+    display: inline-block;
+}
+
+#menu-bar li a {
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+}
