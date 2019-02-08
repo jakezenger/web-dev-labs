@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--removeIf(production)-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <!--endRemoveIf(production)-->
+    
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+<body>
+    <form>
+        Username:<br>
+        <input type="text" id="username">
+        <br>
+        Password:<br>
+        <input type="password" id="password">
+        <br>
+        <input type="button" id="submit-btn" value="Login">
+    </form>
+
+    <div id='error'></div>
+
+    <!-- inject:js -->
+    <!-- endinject -->
+
+    <!--removeIf(production)-->
+    <script src='js/login.js'></script>
+    <!--endRemoveIf(production)-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            initializeLogin();
+        });
+    </script>
+</body>
+</html>
