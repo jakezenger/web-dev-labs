@@ -42,7 +42,7 @@
             },
             
             getStudentsFromApi: function() {
-                let studentsApi = 'http://localhost:8081/api/student';
+                let studentsApi = process.env.STUDENT_API;
 
                 Vue.axios.get(studentsApi, this.getAuthHeader()).then(
                     (response) => {

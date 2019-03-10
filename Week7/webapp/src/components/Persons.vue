@@ -42,7 +42,7 @@
             },
             
             getPersonsFromApi: function() {
-                let personsApi = 'http://localhost:8081/api/person';
+                let personsApi = process.env.PERSON_API;
 
                 Vue.axios.get(personsApi, this.getAuthHeader()).then(
                     (response) => {
